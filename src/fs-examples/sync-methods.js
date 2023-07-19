@@ -3,7 +3,7 @@ import path from "path";
 
 const myNewFile = path.join(__dirname, "my-new-file.txt")
 const myJsonFile = path.join(__dirname, "my-new-file.json")
-const myParentDir = path.join(__dirname, "my-parent-directory")
+// const myParentDir = path.join(__dirname, "my-parent-directory")
 const myDir = path.join(__dirname, "my-directory")
 
 const data = fs.readFileSync(path.join(__dirname, "example.txt"), "utf-8");
