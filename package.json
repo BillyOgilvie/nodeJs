@@ -1,0 +1,28 @@
+{
+  "name": "helloworld",
+  "version": "1.0.0",
+  "description": "NodeJS course",
+  "main": "./",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "say hello": "node hello-world.js",
+    "fib": "node fibonacci.js",
+    "both": "npm run say-hello && npm run fib",
+    "create-file": "mkdir  && touch src/my-file.txt && echo 'Text!' > src/my-file.txt"
+  },
+  "keywords": [
+    "fibonacci"
+  ],
+  "author": "Billy Ogilvie",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.9",
+    "@babel/core": "^7.22.9",
+    "@babel/node": "^7.22.6",
+    "@babel/preset-env": "^7.22.9",
+    "nodemon": "^3.0.1"
+  }
+}
