@@ -4,6 +4,7 @@
   "description": "NodeJS course",
   "main": "./",
   "scripts": {
+    "start": "node ./src/hosted-server.js",
     "build": "babel src --out-dir dist",
     "express": "npx babel-node src/web-server-examples/express-server.js",
     "koa": "npx babel-node src/web-server-examples/koa-server.js",
@@ -13,6 +14,9 @@
     "fib": "node fibonacci.js",
     "both": "npm run say-hello && npm run fib",
     "create-file": "mkdir  && touch src/my-file.txt && echo 'Text!' > src/my-file.txt"
+  },
+  "engines": {
+    "node": "14.x"
   },
   "keywords": [
     "fibonacci"
